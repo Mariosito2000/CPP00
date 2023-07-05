@@ -13,7 +13,7 @@ SOURCES	=	tests.cpp \
 
 OBJS	=	$(SOURCES:.cpp=.o)
 
-NAME	=	tiesto
+NAME	=	log
 
 CC		=	g++
 
