@@ -14,7 +14,7 @@ int	main(void)
 			if (std::cin.eof())
 			{
 				std::cout << "\033[0;31mYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-				exit(1);
+				std::exit(1);
 			}
 		}
 		if (order == "ADD")

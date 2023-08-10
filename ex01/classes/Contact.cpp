@@ -6,7 +6,6 @@ Contact::Contact()
 
 Contact::~Contact()
 {
-	delete(this);
 }
 
 /*--SETTERS--*/
@@ -16,12 +15,12 @@ void	Contact::SetFirstName()
 	firstName.clear();
 	while (firstName.empty())
 	{
-		std::cout << "Let's set contact's firstName >> ";
+		std::cout << "Let's set contact's first name >> ";
 		getline(std::cin, firstName);
 		if (std::cin.eof())
 		{
 			std::cout << "\033[0;31m\nYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-			exit(1);
+			std::exit(1);
 		}
 	}
 }
@@ -31,12 +30,12 @@ void	Contact::SetLastName()
 	lastName.clear();
 	while (lastName.empty())
 	{
-		std::cout << "Let's set contact's lastName >> ";
+		std::cout << "Let's set contact's last name >> ";
 		getline(std::cin, lastName);
 		if (std::cin.eof())
 		{
 			std::cout << "\033[0;31m\nYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-			exit(1);
+			std::exit(1);
 		}
 	}
 }
@@ -51,7 +50,7 @@ void	Contact::SetNickname()
 		if (std::cin.eof())
 		{
 			std::cout << "\033[0;31m\nYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-			exit(1);
+			std::exit(1);
 		}
 	}
 }
@@ -66,7 +65,7 @@ void	Contact::SetNumber()
 		if (std::cin.eof())
 		{
 			std::cout << "\033[0;31m\nYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-			exit(1);
+			std::exit(1);
 		}
 	}
 }
@@ -81,7 +80,7 @@ void	Contact::SetSecret()
 		if (std::cin.eof())
 		{
 			std::cout << "\033[0;31m\nYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-			exit(1);
+			std::exit(1);
 		}
 	}
 }

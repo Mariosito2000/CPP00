@@ -8,7 +8,6 @@ PhoneBook::PhoneBook()
 
 PhoneBook::~PhoneBook()
 {
-	delete(this);
 }
 
 void	PhoneBook::AddContact()
@@ -99,7 +98,7 @@ void	PhoneBook::ShowContacts()
 		if (std::cin.eof())
 		{
 			std::cout << "\033[0;31m\nYou forced EOF, now you won't be able to write, bye :_C\033[0m";
-			exit(1);
+			std::exit(1);
 		}
 		for (size_t i = 0; i < search.length(); i++)
 		{
